@@ -78,6 +78,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<ServicesPage />} />
+
+
       </Routes>
 
       <Footer theme={theme} />
