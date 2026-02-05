@@ -50,7 +50,7 @@ const Team = () => {
         viewport={{ once: true }}
         className="text-gray-500 dark:text-gray-300 mb-12 max-w-xl mx-auto"
       >
-        A passionate team of digital experts dedicated to your brand’s success.
+        A passionate team of digital experts dedicated to your brand's success.
       </motion.p>
 
       <motion.div

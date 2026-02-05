@@ -1,4 +1,4 @@
- import React from "react";
+import React from "react";
 import Title from "./Title";
 import assets from "../assets/assets";
 import toast from "react-hot-toast";
@@ -37,10 +37,7 @@ const ContactUs = () => {
     const loadingToast = toast.loading("Sending message...");
 
     const formData = new FormData(event.target);
-    formData.append(
-      "access_key",
-      "e7986021-fb3b-4ddc-bc28-1c814c1760fd"
-    );
+    formData.append("access_key", "e7986021-fb3b-4ddc-bc28-1c814c1760fd");
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -74,12 +71,24 @@ const ContactUs = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
+         
       >
         <Title
           title="Reach out to us"
-          desc="From strategy to execution, we craft digital solutions that move your business forward."
         />
       </motion.div>
+
+       
+      
+            <motion.p
+              initial={{ opacity: 0, y: 25 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="text-gray-500 mb-12 max-w-xl mx-auto dark:text-white/75"
+            >
+               From strategy to execution, we craft digital solutions that move  forward.
+            </motion.p>
 
       <motion.form
         onSubmit={onSubmit}
@@ -96,7 +105,11 @@ const ContactUs = () => {
             className="flex items-center gap-2 pl-3 rounded-lg
             border border-gray-300 dark:border-gray-600"
           >
-            <img src={assets.person_icon} alt="" className="w-4 h-4 opacity-70" />
+            <img
+              src={assets.person_icon}
+              alt=""
+              className="w-4 h-4 opacity-70"
+            />
             <input
               type="text"
               name="name"
@@ -114,7 +127,11 @@ const ContactUs = () => {
             className="flex items-center gap-2 pl-3 rounded-lg
             border border-gray-300 dark:border-gray-600"
           >
-            <img src={assets.email_icon} alt="" className="w-4 h-4 opacity-70" />
+            <img
+              src={assets.email_icon}
+              alt=""
+              className="w-4 h-4 opacity-70"
+            />
             <input
               type="email"
               name="email"

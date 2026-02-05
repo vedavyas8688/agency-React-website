@@ -1,4 +1,4 @@
-import React from "react";
+ import React from "react";
 import assets from "../assets/assets";
 
 const Footer = ({ theme }) => {
@@ -15,7 +15,7 @@ const Footer = ({ theme }) => {
           />
           <p className="max-w-md">
             From Strategy to execution, we craft digital solutions that move
-            your bussiness forward.
+            your business forward.
           </p>
           <ul className="flex gap-8">
             <li>
@@ -64,7 +64,7 @@ const Footer = ({ theme }) => {
       {/* footer bottom */}
 
       <div className="pb-6 text-sm text-gray-500 flex  justify-center sm:justify-between gap-4 flex-wrap ">
-        <p>Copyright 2026 ©  veda -All Rights Reserved</p>
+        <p>Copyright 2026 © veda - All Rights Reserved</p>
         <div className="flex items-center  justify-between gap-4">
             <img src={assets.facebook_icon} alt="" />
             <img src={assets.instagram_icon} alt="" />
@@ -72,10 +72,6 @@ const Footer = ({ theme }) => {
             <img src={assets.twitter_icon} alt="" />    
         </div>
       </div>
-
-
-
-
     </div>
   );
 };
