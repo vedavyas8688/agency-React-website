@@ -10,7 +10,7 @@ const IndustryPerson = () => {
         <div className="relative">
           {/* Image */}
           {/* <img
-            src="/images/retail.jpg"
+            src={}
             alt="Retail"
             className="rounded-2xl w-full object-cover"
           /> */}
@@ -40,7 +40,7 @@ const IndustryPerson = () => {
         <div className="relative">
            
           {/* <img
-            src="/images/industry.jpg"
+            src=" "
             alt="Industry"
             className="rounded-2xl w-full object-cover"
           /> */}
