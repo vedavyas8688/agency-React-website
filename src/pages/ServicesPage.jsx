@@ -11,7 +11,7 @@ import OutBoundSystems from "./OutBoundSystems";
 import Scale from "./Scale";
 import DiagnoticsSession from "./DiagnoticsSession";
 import ScrollFramework from "./ScrollFramework";
-
+ 
 const containerVariants = {
   hidden: {},
   visible: {
@@ -247,7 +247,7 @@ const ServicesPage = () => {
       <DiagnoticsSession />
 
       <ScrollFramework />
-    </>
+     </>
   );
 };
 

@@ -87,8 +87,7 @@ const ScrollFramework = () => {
       }
     });
 
-    // ✅ ensure last item activates
-    const isAtBottom =
+     const isAtBottom =
       container.scrollTop + container.clientHeight >=
       container.scrollHeight - 5;
 
@@ -103,7 +102,7 @@ const ScrollFramework = () => {
     <section className="bg-[#eaf6ff] py-24">
       <div className="mx-auto max-w-6xl grid grid-cols-1 lg:grid-cols-3 gap-16 px-6">
 
-        {/* LEFT – STICKY */}
+        {/* LEFT   */}
         <div className="lg:col-span-1 sticky top-24 self-start">
           <h2 className="text-3xl font-semibold mb-8">
             Our <span className="text-blue-600">AI Services</span>
@@ -125,7 +124,7 @@ const ScrollFramework = () => {
           </div>
         </div>
 
-        {/* RIGHT – SCROLL (NO SCROLLBAR) */}
+        {/* RIGHT    */}
         <div
           ref={scrollRef}
           onScroll={handleScroll}
