@@ -1,4 +1,4 @@
- import React from "react";
+import React from "react";
 import { ArrowRight, Phone } from "lucide-react";
 import { motion } from "framer-motion";
 import toast from "react-hot-toast";
@@ -7,8 +7,10 @@ import assets from "../assets/assets";
 import Capabilities from "./Capabilities";
 import ReadinessReview from "./ReadinessReview";
 import FAQSection from "./FAQSection";
-
-/* ---------------- ANIMATION VARIANTS ---------------- */
+import OutBoundSystems from "./OutBoundSystems";
+import Scale from "./Scale";
+import DiagnoticsSession from "./DiagnoticsSession";
+import ScrollFramework from "./ScrollFramework";
 
 const containerVariants = {
   hidden: {},
@@ -43,10 +45,7 @@ const ServicesPage = () => {
     const formData = new FormData(event.target);
 
     // Web3Forms required key
-    formData.append(
-      "access_key",
-      "e7986021-fb3b-4ddc-bc28-1c814c1760fd"
-    );
+    formData.append("access_key", "e7986021-fb3b-4ddc-bc28-1c814c1760fd");
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -74,8 +73,7 @@ const ServicesPage = () => {
       {/* ---------------- HERO + FORM ---------------- */}
       <section className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-gray-950 dark:via-blue-950 dark:to-indigo-950 px-6 sm:px-12 lg:px-24 py-24 flex items-center">
         <div className="grid lg:grid-cols-2 gap-16 items-center w-full">
-          
-          {/* ---------------- LEFT CONTENT ---------------- */}
+          {/* left side content */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             animate={{ opacity: 1, x: 0 }}
@@ -119,7 +117,8 @@ const ServicesPage = () => {
             </div>
           </motion.div>
 
-          {/* ---------------- CONTACT FORM ---------------- */}
+          {/* form */}
+
           <motion.form
             onSubmit={onSubmit}
             variants={containerVariants}
@@ -128,10 +127,17 @@ const ServicesPage = () => {
             className="bg-white/70 dark:bg-gray-900/70 backdrop-blur-xl border border-gray-200 dark:border-gray-700 rounded-2xl p-6 sm:p-8 grid sm:grid-cols-2 gap-4 dark:text-white"
           >
             {/* Hidden fields for email formatting */}
-            <input type="hidden" name="subject" value="New Contact Form Submission" />
+            <input
+              type="hidden"
+              name="subject"
+              value="New Contact Form Submission"
+            />
             <input type="hidden" name="from_name" value="Services Page" />
 
-            <motion.div variants={fieldVariants} className="sm:col-span-2 text-center mb-3">
+            <motion.div
+              variants={fieldVariants}
+              className="sm:col-span-2 text-center mb-3"
+            >
               <h2 className="text-3xl sm:text-4xl font-extrabold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
                 Contact Us
               </h2>
@@ -233,6 +239,14 @@ const ServicesPage = () => {
       <Capabilities />
       <ReadinessReview />
       <FAQSection />
+
+      {/* outbound page */}
+
+      <OutBoundSystems />
+      <Scale />
+      <DiagnoticsSession />
+
+      <ScrollFramework />
     </>
   );
 };
