@@ -11,6 +11,8 @@ import OutBoundSystems from "./OutBoundSystems";
 import Scale from "./Scale";
 import DiagnoticsSession from "./DiagnoticsSession";
 import ScrollFramework from "./ScrollFramework";
+import RightScroolFrameworks from "./RightScroolFrameworks";
+ 
  
 const containerVariants = {
   hidden: {},
@@ -70,7 +72,7 @@ const ServicesPage = () => {
 
   return (
     <>
-      {/* ---------------- HERO + FORM ---------------- */}
+      
       <section className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-gray-950 dark:via-blue-950 dark:to-indigo-950 px-6 sm:px-12 lg:px-24 py-24 flex items-center">
         <div className="grid lg:grid-cols-2 gap-16 items-center w-full">
           {/* left side content */}
@@ -180,7 +182,7 @@ const ServicesPage = () => {
             </motion.div>
 
             {/* Email */}
-            <motion.div variants={fieldVariants}>
+            <motion.div  variants={fieldVariants}>
               <p className="mb-2 text-sm font-medium">Email</p>
               <div className="flex items-center gap-2 pl-3 rounded-lg border border-gray-300 dark:border-gray-600">
                 <img
@@ -247,7 +249,9 @@ const ServicesPage = () => {
       <DiagnoticsSession />
 
       <ScrollFramework />
-     </>
+      <RightScroolFrameworks />
+
+      </>
   );
 };
 

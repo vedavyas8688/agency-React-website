@@ -58,21 +58,21 @@ const Navbar = ({ theme, setTheme }) => {
           Services
         </NavLink>
 
-        <a
-          href="#our-work"
+        <NavLink
+          to="/ourwork"
           onClick={() => setSidebarOpen(false)}
-          className="sm:hover:border-b"
+          className= {linkClasses}
         >
           Our Work
-        </a>
+        </NavLink>
 
-        <a
-          href="#contact-us"
+        <NavLink
+          to="/contactus"
           onClick={() => setSidebarOpen(false)}
-          className="sm:hover:border-b"
+          className={linkClasses}
         >
           Contact Us
-        </a>
+        </NavLink>
       </div>
 
       {/* Right Section */}

@@ -11,6 +11,7 @@ import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
 import ServicesPage from "./pages/ServicesPage";
 import { Toaster } from "react-hot-toast";
+import OurWorkPages from "./pages/OurWorkPage";
 
 /* Home page layout */
 const Home = () => (
@@ -78,6 +79,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<ServicesPage />} />
+        <Route path="/ourwork" element={<OurWorkPages />} />
+          
 
 
       </Routes>
