@@ -1,5 +1,7 @@
  import React from 'react'
 import IndustryPerson from './IndustryPerson'
+import OurTeam from './OurTeam'
+import OurPartners from './OurPartners'
  
  const OurWorkPage = () => {
    return (
@@ -52,6 +54,8 @@ import IndustryPerson from './IndustryPerson'
     </section>
     
     <IndustryPerson />
+    <OurTeam />
+    <OurPartners />
     </>
    )
  }

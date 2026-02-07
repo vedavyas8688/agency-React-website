@@ -40,7 +40,7 @@ const IndustryPerson = () => {
         <div className="relative">
            
           {/* <img
-            src=" "
+            src=""
             alt="Industry"
             className="rounded-2xl w-full object-cover"
           /> */}

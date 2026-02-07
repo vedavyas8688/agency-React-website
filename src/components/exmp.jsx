@@ -1,72 +1,136 @@
  import React from "react";
 
-const IndustryRetailSection = () => {
+const TeamSection = () => {
+  const team = [
+    {
+      name: "Patrick Langeslag",
+      role: "CFO & Co-Founder",
+      image: "/team/patrick.jpg",
+    },
+    {
+      name: "Manuel Tessloff",
+      role: "CPO & Co-Founder",
+      image: "/team/manuel.jpg",
+    },
+    {
+      name: "Martin Schmitz",
+      role: "CTO",
+      image: "/team/martin.jpg",
+    },
+    {
+      name: "Alexandra Mikrikow",
+      role: "Management Assistant",
+      image: "/team/alexandra.jpg",
+    },
+  ];
+
   return (
-    <section className="max-w-7xl mx-auto px-6 py-16">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-        
-        {/* Retail Card */}
-        <div className="relative">
-          {/* Image */}
-          <img
-            src="/images/retail.jpg"
-            alt="Retail"
-            className="rounded-2xl w-full object-cover"
-          />
+    <section className="bg-[#1f2326] text-white py-24">
+      <div className="max-w-7xl mx-auto px-6">
+        {/* Heading */}
+        <h2 className="text-5xl font-light mb-6">
+          Meet our team
+        </h2>
 
-          {/* Badge */}
-          <div className="absolute -bottom-8 left-6 bg-orange-400 text-white px-8 py-4 rounded-xl shadow-lg">
-            <h3 className="text-xl font-semibold tracking-wide">
-              STRONG FOR<br />RETAIL
-            </h3>
-          </div>
+        {/* Description */}
+        <p className="max-w-3xl text-gray-300 leading-relaxed mb-20">
+          Who's behind the tools? We're not just any team – we're a powerful
+          collective of specialists who love pushing boundaries. Every day, we
+          challenge ourselves with the question: "How can this run even
+          better?" Meet the individuals who help make it all happen and help
+          create wow moments on your retail or factory floor. Every single day.
+        </p>
 
-          {/* Content */}
-          <div className="mt-16 max-w-md">
-            <p className="text-gray-700 leading-relaxed mb-6">
-              Whether it’s a shelf, cash register or warehouse: With ReAct
-              Now, your employees have everything they need to make your
-              customers and their boss happy.
-            </p>
+        {/* Team grid */}
+        <div className="grid md:grid-cols-2 gap-x-24 gap-y-20">
+          {team.map((member, index) => (
+            <div key={index}>
+              <div className="flex items-center gap-6 mb-6">
+                {/* Avatar */}
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="w-20 h-20 rounded-full object-cover grayscale transition duration-300 hover:grayscale-0"
+                />
 
-            <button className="bg-orange-400 hover:bg-orange-500 transition text-white px-6 py-3 rounded-full font-medium">
-              ReAct Now for retail
-            </button>
-          </div>
+                {/* Info */}
+                <div>
+                  <h3 className="text-lg font-medium">
+                    {member.name}
+                  </h3>
+                  <p className="text-sm text-gray-400">
+                    {member.role}
+                  </p>
+                </div>
+              </div>
+
+              {/* Divider */}
+              <div className="h-px bg-gray-600/40" />
+            </div>
+          ))}
         </div>
-
-        {/* Industry Card */}
-        <div className="relative">
-          {/* Image */}
-          <img
-            src="/images/industry.jpg"
-            alt="Industry"
-            className="rounded-2xl w-full object-cover"
-          />
-
-          {/* Badge */}
-          <div className="absolute -bottom-8 right-6 bg-cyan-400 text-white px-8 py-4 rounded-xl shadow-lg">
-            <h3 className="text-xl font-semibold tracking-wide">
-              SMART FOR<br />INDUSTRY
-            </h3>
-          </div>
-
-          {/* Content */}
-          <div className="mt-16 max-w-md ml-auto text-left">
-            <p className="text-gray-700 leading-relaxed mb-6">
-              Smooth processes and seamless communication: Increase your
-              team’s productivity and plant effectiveness with ReAct Now.
-            </p>
-
-            <button className="bg-cyan-400 hover:bg-cyan-500 transition text-white px-6 py-3 rounded-full font-medium">
-              ReAct Now for industry
-            </button>
-          </div>
-        </div>
-
       </div>
     </section>
   );
 };
 
-export default IndustryRetailSection;
+export default TeamSection;
+
+
+
+
+////import React from "react";
+
+const PartnersSection = () => {
+  const partners = [
+    {
+      name: "EDEKA Techstarter",
+      logo: "/partners/edeka-techstarter.png",
+    },
+    {
+      name: "Software AG",
+      logo: "/partners/software-ag.png",
+    },
+    {
+      name: "POS Tuning",
+      logo: "/partners/pos-tuning.png",
+    },
+    {
+      name: "TOMRA",
+      logo: "/partners/tomra.png",
+    },
+    {
+      name: "Food Akademie",
+      logo: "/partners/food-akademie.png",
+    },
+  ];
+
+  return (
+    <section className="bg-white py-24">
+      <div className="max-w-7xl mx-auto px-6">
+        {/* Heading */}
+        <h2 className="text-center text-4xl font-light text-gray-900 mb-16">
+          Our partners
+        </h2>
+
+        {/* Logos */}
+        <div className="flex flex-wrap items-center justify-center gap-x-20 gap-y-12">
+          {partners.map((partner, index) => (
+            <div
+              key={index}
+              className="flex items-center justify-center"
+            >
+              <img
+                src={partner.logo}
+                alt={partner.name}
+                className="h-12 object-contain grayscale opacity-80 transition duration-300 hover:grayscale-0 hover:opacity-100"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default PartnersSection;
