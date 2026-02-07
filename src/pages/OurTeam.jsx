@@ -4,64 +4,62 @@ import React from "react";
   {
     name: "Patrick Langeslag",
     role: "CFO & Co-Founder",
-    image: "/team/patrick.jpg",
+    image: "https://i.pravatar.cc/300?img=12",
   },
   {
     name: "Manuel Tessloff",
     role: "CPO & Co-Founder",
-    image: "/team/manuel.jpg",
+    image: "https://i.pravatar.cc/300?img=32",
   },
   {
     name: "Martin Schmitz",
     role: "CTO",
-    image: "/team/martin.jpg",
+    image: "https://i.pravatar.cc/300?img=45",
   },
   {
     name: "Alexandra Mikrikow",
     role: "Management Assistant",
-    image: "/team/alexandra.jpg",
+    image: "https://i.pravatar.cc/300?img=47",
   },
- 
-
   {
     name: "Lars-Erik Glage",
     role: "Senior Account Director",
-    image: "/team/lars-erik-glage.jpg",
+    image: "https://i.pravatar.cc/300?img=52",
   },
   {
     name: "Robin Schacht",
     role: "Senior System Professional",
-    image: "/team/robin-schacht.jpg",
+    image: "https://i.pravatar.cc/300?img=58",
   },
   {
     name: "Gerrit Dopatka",
     role: "Senior System Professional",
-    image: "/team/gerrit-dopatka.jpg",
+    image: "https://i.pravatar.cc/300?img=61",
   },
   {
     name: "Torsten Tapper",
     role: "Senior System Professional",
-    image: "/team/torsten-tapper.jpg",
+    image: "https://i.pravatar.cc/300?img=64",
   },
   {
     name: "Melanie Quassdorf",
     role: "Team Assistance Operation",
-    image: "/team/melanie-quassdorf.jpg",
+    image: "https://i.pravatar.cc/300?img=48",
   },
   {
     name: "Felix Lorenz",
     role: "Working Student / Software Testing",
-    image: "/team/felix-lorenz.jpg",
+    image: "https://i.pravatar.cc/300?img=67",
   },
   {
     name: "Jewgenij Behrendt",
     role: "Working Student / Marketing & Sales",
-    image: "/team/jewgenij-behrendt.jpg",
+    image: "https://i.pravatar.cc/300?img=69",
   },
   {
     name: "Benjamin Ghodsi-Moghaddam",
     role: "Working Student / Software Testing",
-    image: "/team/benjamin-ghodsi-moghaddam.jpg",
+    image:  "https://i.pravatar.cc/300?img=69",
   },
 ];
 
