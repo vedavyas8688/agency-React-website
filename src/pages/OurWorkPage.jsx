@@ -2,6 +2,7 @@
 import IndustryPerson from './IndustryPerson'
 import OurTeam from './OurTeam'
 import OurPartners from './OurPartners'
+import StickyBackground from './StickyBackground'
  
  const OurWorkPage = () => {
    return (
@@ -56,6 +57,9 @@ import OurPartners from './OurPartners'
     <IndustryPerson />
     <OurTeam />
     <OurPartners />
+    <StickyBackground />
+     
+
     </>
    )
  }

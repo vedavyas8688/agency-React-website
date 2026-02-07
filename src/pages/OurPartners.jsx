@@ -23,7 +23,7 @@ const partners = [
 const OurPartners = () => {
   return (
     <section className="bg-white py-24 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6 ">
         <h2 className="text-center text-4xl font-light text-gray-900 mb-14">
           Our partners
         </h2>
@@ -42,6 +42,19 @@ const OurPartners = () => {
           ))}
         </div>
       </div>
+      {/* <div className="relative w-full overflow-hidden mt-15 my-6">
+        <div className="flex  w-max animate-marquee gap-20 hover:[animation-play-state:paused]">
+          {[...partners, ...partners].map((partner, index) => (
+            <img
+              key={index}
+              src={partner.logo}
+              alt={partner.name}
+              loading="lazy"
+              className="h-12 object-contain grayscale opacity-80 transition hover:grayscale-0 hover:opacity-100"
+            />
+          ))}
+        </div>
+      </div> */}
 
        <style>{`
         @keyframes marquee {
