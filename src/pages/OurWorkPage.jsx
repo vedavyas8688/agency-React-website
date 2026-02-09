@@ -3,6 +3,8 @@ import IndustryPerson from './IndustryPerson'
 import OurTeam from './OurTeam'
 import OurPartners from './OurPartners'
 import StickyBackground from './StickyBackground'
+ import CategorFilter from './CategorFilter'
+import PricePage from './PricePage'
  
  const OurWorkPage = () => {
    return (
@@ -58,6 +60,10 @@ import StickyBackground from './StickyBackground'
     <OurTeam />
     <OurPartners />
     <StickyBackground />
+ 
+    <CategorFilter />
+    <PricePage />
+
      
 
     </>

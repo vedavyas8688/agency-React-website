@@ -74,7 +74,7 @@ const OurTeam = () => {
         </h2>
 
          <p className="max-w-3xl text-gray-300 leading-relaxed mb-20">
-          Who's behind the tools? We're not just any team – we're a powerful
+          Who's behind the tools? We're not just any team - we're a powerful
           collective of specialists who love pushing boundaries. Every day, we
           challenge ourselves with the question: "How can this run even
           better?" Meet the individuals who help make it all happen and help
@@ -101,7 +101,7 @@ const OurTeam = () => {
                 </div>
               </div>
 
-               <div className="h-px bg-gray-600/40" />
+               <div className="h-px bg-gray-600/40 " />
             </div>
           ))}
         </div>

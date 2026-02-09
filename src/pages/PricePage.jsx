@@ -1,5 +1,5 @@
- import { useState } from "react";
 import { Check } from "lucide-react";
+import React, { useState } from "react";
 
 const pricing = [
   { contacts: "1K", starter: 5, business: 9 },
@@ -9,30 +9,30 @@ const pricing = [
   { contacts: "1M", starter: 1490, business: 2490 },
 ];
 
-export default function PricingSlider() {
+const PricePage = () => {
   const [index, setIndex] = useState(0);
 
   const max = pricing.length - 1;
+
   const progress = (index / max) * 100;
 
   return (
     <section className="bg-slate-50 py-24">
       <div className="max-w-6xl mx-auto px-4">
+        {/* heading */}
 
-        {/* Header */}
-        <h2 className="text-center text-xl font-semibold text-slate-900">
-          How many contacts do you have?
-        </h2>
+        <h1 className="text-center text-xl font-semibold text-slate-900">
+          How Many Contacts Do You Have ?
+        </h1>
 
         <p className="text-center text-sm text-slate-500 mt-2">
           {pricing[index].contacts} contacts/month
         </p>
 
-        {/* ================= SLIDER ================= */}
+        {/* slider */}
+
         <div className="max-w-3xl mx-auto mt-10">
-
           <div className="relative">
-
             {/* Base track */}
             <div className="h-1 rounded-full bg-slate-200" />
 
@@ -45,10 +45,7 @@ export default function PricingSlider() {
             {/* Tick marks */}
             <div className="absolute top-0 left-0 right-0 h-1 flex justify-between">
               {pricing.map((_, i) => (
-                <span
-                  key={i}
-                  className="w-px h-2 bg-slate-300 -mt-0.5"
-                />
+                <span key={i} className="w-px h-2 bg-slate-300 -mt-0.5" />
               ))}
             </div>
 
@@ -87,28 +84,29 @@ export default function PricingSlider() {
           </div>
         </div>
 
-        {/* ================= CARDS ================= */}
-        <div className="grid lg:grid-cols-2 gap-8 mt-20 max-w-4xl mx-auto">
+        {/* cards */}
 
-          {/* Starter */}
+        <div className="grid lg:grid-cols-2 gap-9 mt-20 max-w-4xl mx-auto">
+          {/* starter */}
+
           <div className="bg-white rounded-2xl shadow p-8">
-            <h3 className="font-semibold text-slate-900">Starter</h3>
+            <h3 className="font-semibold text-slate-900 ">Starter</h3>
 
             <div className="flex items-end mt-2">
               <span className="text-4xl font-bold">
                 ${pricing[index].starter}
               </span>
-              <span className="text-slate-500 ml-1 mb-1">/mo</span>
+              <span className="text-slate-500 ml-1 mb-1"> /mo</span>
             </div>
 
             <p className="text-sm text-slate-500 mt-3">
-              There are many variations available, but the majority have suffered.
+              There are many variations available, but the majority have
+              suffered.
             </p>
 
-            <button className="w-full bg-indigo-500 text-white rounded-lg py-2.5 mt-6 font-medium hover:bg-indigo-600">
+            <button className="w-full bg-indigo-500 text-white rounded-lg py-1.5 mt-6 font-medium hover:bg-indigo-600">
               Purchase Plan
             </button>
-
             <div className="mt-6 text-sm font-medium">Includes:</div>
 
             <ul className="mt-4 space-y-3 text-sm text-slate-600">
@@ -119,7 +117,7 @@ export default function PricingSlider() {
                 "Officia deserunt mollit anim",
               ].map((item) => (
                 <li key={item} className="flex items-center gap-2">
-                  <Check className="w-4 h-4 text-emerald-500" />
+                  <Check className="w-4 h-4 text-emrald-500" />
                   {item}
                 </li>
               ))}
@@ -142,7 +140,8 @@ export default function PricingSlider() {
             </div>
 
             <p className="text-sm text-slate-400 mt-3">
-              There are many variations available, but the majority have suffered.
+              There are many variations available, but the majority have
+              suffered.
             </p>
 
             <button className="w-full bg-indigo-500 rounded-lg py-2.5 mt-6 font-medium hover:bg-indigo-600">
@@ -168,9 +167,10 @@ export default function PricingSlider() {
               ))}
             </ul>
           </div>
-
         </div>
       </div>
     </section>
   );
-}
+};
+
+export default PricePage;
