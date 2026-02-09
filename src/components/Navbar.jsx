@@ -65,6 +65,13 @@ const Navbar = ({ theme, setTheme }) => {
         >
           Our Work
         </NavLink>
+        <NavLink
+          to="/blogcomponents"
+          onClick={() => setSidebarOpen(false)}
+          className={linkClasses}
+        >
+          Blogs
+        </NavLink>
 
         <NavLink
           to="/contactus"
