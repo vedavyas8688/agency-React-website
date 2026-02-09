@@ -316,7 +316,7 @@ const categories = [
 ];
 
 export default function App() {
-  const [active, setActive] = useState("AI");
+  const [active, setActive] = useState("engineering");
 
   const filtered =
     active === "AI" ? articles : articles.filter((a) => a.category === active);
