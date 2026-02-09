@@ -5,6 +5,7 @@ import OurPartners from './OurPartners'
 import StickyBackground from './StickyBackground'
  import CategorFilter from './CategorFilter'
 import PricePage from './PricePage'
+import BlogComponents from './BlogComponents'
  
  const OurWorkPage = () => {
    return (
@@ -63,7 +64,7 @@ import PricePage from './PricePage'
  
     <CategorFilter />
     <PricePage />
-
+    <BlogComponents/>
      
 
     </>
