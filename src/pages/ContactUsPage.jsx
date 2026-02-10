@@ -5,6 +5,9 @@ import ContactSection2 from "./ContactSection2";
 import FAQSectionContact from "./FAQSectionContact";
 import ContactSection3 from "./ContactSection3";
 import ContactSection4 from "./ContactSection4";
+import ContactSection5 from "./ContactSection5";
+import ContactSection6 from "./ContactSection6";
+import ContactSection7 from "./ContactSection7";
 
 function ContactUsPage() {
   return (
@@ -15,7 +18,10 @@ function ContactUsPage() {
       <ContactSection2 />
       <FAQSectionContact />
       <ContactSection3 />
-      <ContactSection4 />
+      {/* <ContactSection4 /> */}
+      <ContactSection5 />
+      <ContactSection6 />
+      <ContactSection7 />
     </div>
   );
 }

@@ -37,7 +37,7 @@ const ContactSection4 = () => {
           </p>
         </div>
 
-        {/* Learn More Button */}
+        {/* Learn More   */}
         <button
           onClick={() => setExpanded(!expanded)}
           className="mt-8 inline-flex items-center gap-2 text-base font-medium text-white underline-offset-4 hover:underline transition"
@@ -47,7 +47,6 @@ const ContactSection4 = () => {
       </div>
     </section>
   );
-  
 }
 
 export default ContactSection4;
