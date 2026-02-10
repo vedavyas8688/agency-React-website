@@ -62,38 +62,37 @@ const posts = [
     comments: 16,
   },
 
-  // 🔥 New premium posts
-
-  {
-    id: 7,
-    category: "AI",
-    title: "AI Strategy Beyond the Hype",
-    desc: "How leaders can separate real AI value from buzzwords and build strategies that last.",
-    image:
-      "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1200&auto=format&fit=crop",
-    views: 1890,
-    comments: 34,
-  },
-  {
-    id: 8,
-    category: "UX",
-    title: "UX Decisions Backed by Data",
-    desc: "Blending qualitative research with analytics to design experiences that convert.",
-    image:
-      "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=1200&auto=format&fit=crop",
-    views: 920,
-    comments: 11,
-  },
-  {
-    id: 9,
-    category: "Engineering",
-    title: "Scaling Frontend Architecture",
-    desc: "Patterns and pitfalls when scaling React applications across large teams.",
-    image:
-      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop",
-    views: 1680,
-    comments: 29,
-  },
+ 
+//   {
+//     id: 7,
+//     category: "AI",
+//     title: "AI Strategy Beyond the Hype",
+//     desc: "How leaders can separate real AI value from buzzwords and build strategies that last.",
+//     image:
+//       "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1200&auto=format&fit=crop",
+//     views: 1890,
+//     comments: 34,
+//   },
+//   {
+//     id: 8,
+//     category: "UX",
+//     title: "UX Decisions Backed by Data",
+//     desc: "Blending qualitative research with analytics to design experiences that convert.",
+//     image:
+//       "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=1200&auto=format&fit=crop",
+//     views: 920,
+//     comments: 11,
+//   },
+//   {
+//     id: 9,
+//     category: "Engineering",
+//     title: "Scaling Frontend Architecture",
+//     desc: "Patterns and pitfalls when scaling React applications across large teams.",
+//     image:
+//       "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop",
+//     views: 1680,
+//     comments: 29,
+//   },
   //   {
   //     id: 10,
   //     category: "Leadership",

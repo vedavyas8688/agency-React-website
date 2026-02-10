@@ -74,7 +74,7 @@ const Navbar = ({ theme, setTheme }) => {
         </NavLink>
 
         <NavLink
-          to="/contactus"
+          to="/contactuspage"
           onClick={() => setSidebarOpen(false)}
           className={linkClasses}
         >

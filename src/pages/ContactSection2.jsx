@@ -1,6 +1,6 @@
- import React from "react";
+import React from "react";
 
-const MapSection = () => {
+const ContactSection2 = () => {
   return (
     <section
       id="map"
@@ -16,15 +16,13 @@ const MapSection = () => {
             scrolling="no"
             marginHeight="0"
             marginWidth="0"
-            src="https://maps.google.com/maps?hl=en&q=London&z=14&output=embed"
-            style={{
-              filter: "grayscale(0) contrast(1.2) opacity(0.85)",
-            }}
-          />
+            src="https://www.google.com/maps?q=Hirola%20InfoTech%20Solutions%20Pvt%20Ltd,%20NO%207,%204th%20floor,%201st%20Cross%20Rd,%20Balaji%20Layout,%20AMCO%20Colony,%20Koti%20Hosahalli,%20Bengaluru,%20Karnataka%20560092&output=embed"
+            style={{ filter: "grayscale(0) conttrast(1.2) opacity(0.85)" }}
+          ></iframe>
         </div>
       </div>
     </section>
   );
 };
 
-export default MapSection;
+export default ContactSection2;

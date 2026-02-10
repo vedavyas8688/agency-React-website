@@ -5,8 +5,8 @@ import OurPartners from './OurPartners'
 import StickyBackground from './StickyBackground'
  import CategorFilter from './CategorFilter'
 import PricePage from './PricePage'
-import BlogComponents from './BlogComponents'
-import BlogComponents1 from './BlogComponents1'
+// import BlogComponents from './BlogComponents'
+// import BlogComponents1 from './BlogComponents1'
  
  const OurWorkPage = () => {
    return (
