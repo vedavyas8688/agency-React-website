@@ -14,10 +14,11 @@ import { Toaster } from "react-hot-toast";
 import OurWorkPages from "./pages/OurWorkPage";
  import BlogsSection from "./pages/BlogsSection";
 import ContactUsPage from "./pages/ContactUsPage";
+import ScrollToTop from "./pages/ScrollToTop";
  
 /* Home page layout */
 const Home = () => (
-  <>
+   <>
     <Hero />
     <TrustedBy />
     <Services />
@@ -77,6 +78,8 @@ const App = () => {
       <Toaster />
       <Navbar theme={theme} setTheme={setTheme} />
 
+      <ScrollToTop/>
+
       {/* ROUTES */}
       <Routes>
         <Route path="/" element={<Home />} />
@@ -95,7 +98,7 @@ const App = () => {
       {/* Cursor Outline */}
       <div
         ref={outlineRef}
-        className="fixed top-0 left-0 h-10 w-10 rounded-full border border-primary pointer-events-none z-[9999]"
+        className="fixed top-0 left-0 h-10 w-10 rounded-full border border-primary pointer-events-none 'z-9999"
       />
 
       {/* Cursor Dot */}

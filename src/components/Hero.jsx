@@ -5,7 +5,8 @@ import { motion } from "motion/react";
 const Hero = () => {
   return (
     <div
-      id="hero"
+       id="hero"
+
       className="
         relative
         flex flex-col items-center gap-6
@@ -17,8 +18,8 @@ const Hero = () => {
       <div className="absolute inset-0 flex justify-center items-start pointer-events-none dark:hidden">
         <div
           className="
-            w-[900px] h-[450px]
-            bg-gradient-to-r
+            w-225 h-123
+            bg-linear-to-r
             from-[#e9efff]
             via-[#c7d8ff]
             to-[#9dbbff]

@@ -51,7 +51,7 @@ const cardVariants = {
 const OurWork = () => {
   return (
     <section
-      id="our-work"
+      
       className="px-4 sm:px-12 lg:px-24 xl:px-40 py-20 text-center
       text-gray-700 dark:text-white"
     >

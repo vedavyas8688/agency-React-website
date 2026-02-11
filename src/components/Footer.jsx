@@ -1,75 +1,111 @@
- import React from "react";
+import React from "react";
 import assets from "../assets/assets";
+import { useNavigate, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
 
 const Footer = ({ theme }) => {
-  return (
-    <div className="bg-slate-50 dark:bg-gray-900 pt-10 sm:pt-10 mt-20 sm:mt-40 px-4 sm:px-10 lg:px-24 xl:px-40 ">
-      {/* footer top */}
+  const navigate = useNavigate();
+  const location = useLocation();
 
-      <div className="flex justify-between lg:items-center max-lg:flex-col gap-10 ">
-        <div className="space-y-5 text-sm  text-gray-700 dark:text-gray-400">
+  const handleNavigation = (sectionId) => {
+    if (location.pathname !== "/") {
+      navigate("/", { state: { scrollTo: sectionId } });
+    } else {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
+
+  return (
+    <div className="bg-slate-50 dark:bg-gray-900 pt-10 mt-20 sm:mt-40 px-4 sm:px-10 lg:px-24 xl:px-40">
+      <div className="flex justify-between lg:items-center max-lg:flex-col gap-10">
+        {/* Left Side */}
+        <div className="space-y-5 text-sm text-gray-700 dark:text-gray-400">
           <img
             src={theme === "dark" ? assets.logo_dark : assets.logo}
             className="w-32 sm:w-44"
-            alt=""
+            alt="Company Logo"
           />
+
           <p className="max-w-md">
             From Strategy to execution, we craft digital solutions that move
             your business forward.
           </p>
+
           <ul className="flex gap-8">
             <li>
-              <a className="hover:text-primary" href="#hero">
+              <NavLink to="/" className="hover:text-primary">
                 Home
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a className="hover:text-primary" href="#services">
+              <NavLink to="/services" className="hover:text-primary">
                 Services
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a className="hover:text-primary" href="#our-work">
+              <NavLink to="/ourwork" className="hover:text-primary">
                 Our Work
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a className="hover:text-primary" href="#contact-us">
+              <NavLink to="/contactuspage" className="hover:text-primary">
                 Contact Us
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>
 
+        {/* Newsletter */}
         <div className="text-gray-600 dark:text-gray-400">
           <h3 className="font-semibold">Subscribe to our newsletter</h3>
           <p className="text-sm my-2 mt-6">
             The latest news, articles, and resources, sent to your inbox weekly.
           </p>
-          <div className="flex gap-2 text-sm">
+
+          <div className="flex gap-2 text-sm mt-4">
             <input
-              type="text"
+              type="email"
               placeholder="Enter your email"
-              className="w-full p-3  text-sm  outline-none rounded dark:text-gray-200  bg-transparent border border-gary-300 dark:border-gray-500"
+              className="w-full px-4 py-3 rounded-md bg-transparent border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-primary outline-none transition"
             />
-            <button className="bg-primary text-white rounded px-6">
+            <button className="bg-primary hover:bg-primary/90 transition text-white rounded-md px-6">
               Subscribe
             </button>
           </div>
         </div>
       </div>
 
-      <hr className="border-gray-300 dark:border-gray-600 my-6"  />
+      <hr className="border-gray-300 dark:border-gray-600 my-6" />
 
-      {/* footer bottom */}
-
-      <div className="pb-6 text-sm text-gray-500 flex  justify-center sm:justify-between gap-4 flex-wrap ">
+      {/* Bottom */}
+      <div className="pb-6 text-sm text-gray-500 flex justify-center sm:justify-between gap-4 flex-wrap">
         <p>Copyright 2026 © veda - All Rights Reserved</p>
-        <div className="flex items-center  justify-between gap-4">
-            <img src={assets.facebook_icon} alt="" />
-            <img src={assets.instagram_icon} alt="" />
-            <img src={assets.linkedin_icon} alt="" />
-            <img src={assets.twitter_icon} alt="" />    
+
+        <div className="flex items-center gap-4">
+          <img
+            src={assets.facebook_icon}
+            alt="Facebook"
+            className="w-5 hover:scale-110 transition"
+          />
+          <img
+            src={assets.instagram_icon}
+            alt="Instagram"
+            className="w-5 hover:scale-110 transition"
+          />
+          <img
+            src={assets.linkedin_icon}
+            alt="LinkedIn"
+            className="w-5 hover:scale-110 transition"
+          />
+          <img
+            src={assets.twitter_icon}
+            alt="Twitter"
+            className="w-5 hover:scale-110 transition"
+          />
         </div>
       </div>
     </div>

@@ -10,10 +10,12 @@ import ContactSection6 from "./ContactSection6";
 import ContactSection7 from "./ContactSection7";
 import SliderSwiper from "./SliderSwiper";
 import SliderSwiper1 from "./SliderSwiper1";
+import ContactSection8 from "./ContactSection8";
 
 function ContactUsPage() {
   return (
-    <div>
+    <div  id="services"
+    >
       <ContactSection4 />
       {/* sectios */}
       <ContactSection1 />
@@ -24,8 +26,9 @@ function ContactUsPage() {
       <ContactSection5 />
       <ContactSection6 />
       <ContactSection7 />
-      <SliderSwiper />
+       <SliderSwiper />
       <SliderSwiper1 />
+      <ContactSection8 />
     </div>
   );
 }

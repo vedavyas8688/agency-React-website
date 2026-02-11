@@ -88,9 +88,9 @@ const SliderSwiper1 = () => {
         >
           {card.map((cards) => (
             <SwiperSlide key={cards.id}>
-              <div
-                className="relative h-100 rounded-2xl overflow-hidden group shadow-lg"
-                style={{
+              <div 
+                className="relative h-100 rounded-2xl overflow-hidden group shadow-lg" 
+                style={{ 
                   backgroundImage: `url(${cards.image})`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
@@ -102,6 +102,7 @@ const SliderSwiper1 = () => {
                   <h3 className="text-xl font-bold mb-3">{cards.title}</h3>
                   <p className="text-sm text-gray-200">{cards.desc}</p>
                 </div>
+                
               </div>
             </SwiperSlide>
           ))}
