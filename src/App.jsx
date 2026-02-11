@@ -15,6 +15,7 @@ import OurWorkPages from "./pages/OurWorkPage";
  import BlogsSection from "./pages/BlogsSection";
 import ContactUsPage from "./pages/ContactUsPage";
 import ScrollToTop from "./pages/ScrollToTop";
+import PageError404 from "./pages/PageError404";
  
 /* Home page layout */
 const Home = () => (
@@ -87,6 +88,11 @@ const App = () => {
         <Route path="/ourwork" element={<OurWorkPages />} />
         <Route path="/blogcomponents" element={<BlogsSection/>} />
         <Route path="/contactuspage" element={<ContactUsPage />}/>
+
+
+
+        {/* errorpage */}
+         <Route path="*" element={<PageError404 />} />
 
           
 

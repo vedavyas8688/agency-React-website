@@ -10,8 +10,10 @@ import ContactSection6 from "./ContactSection6";
 import ContactSection7 from "./ContactSection7";
 import SliderSwiper from "./SliderSwiper";
 import SliderSwiper1 from "./SliderSwiper1";
+import PageError404 from "./PageError404";
+import Charts from "./Charts";
 import ContactSection8 from "./ContactSection8";
-
+ 
 function ContactUsPage() {
   return (
     <div  id="services"
@@ -28,8 +30,10 @@ function ContactUsPage() {
       <ContactSection7 />
        <SliderSwiper />
       <SliderSwiper1 />
-      <ContactSection8 />
-    </div>
+      {/* <PageError404 /> */}
+      <Charts />
+      <ContactSection8/>
+     </div>
   );
 }
 

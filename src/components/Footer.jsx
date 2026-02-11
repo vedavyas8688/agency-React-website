@@ -3,7 +3,6 @@ import assets from "../assets/assets";
 import { useNavigate, useLocation } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
-
 const Footer = ({ theme }) => {
   const navigate = useNavigate();
   const location = useLocation();
@@ -72,6 +71,7 @@ const Footer = ({ theme }) => {
               placeholder="Enter your email"
               className="w-full px-4 py-3 rounded-md bg-transparent border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-primary outline-none transition"
             />
+
             <button className="bg-primary hover:bg-primary/90 transition text-white rounded-md px-6">
               Subscribe
             </button>
