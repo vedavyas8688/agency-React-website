@@ -88,8 +88,8 @@ const ContactSection7 = () => {
 
                 <span className="text-lg tracking-widest text-indigo-900 font-bold  ">
                   +{member.expe}
-                  Years
-                </span>
+                   <span className="text-lg tracking-wider text-indigo-900 foont-bold p-0.5">Years</span>
+                </span> 
               </div>
             </div>
           );
