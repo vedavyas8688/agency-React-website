@@ -13,6 +13,8 @@ import SliderSwiper1 from "./SliderSwiper1";
 import PageError404 from "./PageError404";
 import Charts from "./Charts";
 import ContactSection8 from "./ContactSection8";
+import ContactSection9 from "./ContactSection9";
+import ContactSection10 from "./ContactSection10";
  
 function ContactUsPage() {
   return (
@@ -33,6 +35,8 @@ function ContactUsPage() {
       {/* <PageError404 /> */}
       <Charts />
       <ContactSection8/>
+      <ContactSection9 />
+      <ContactSection10 />
      </div>
   );
 }

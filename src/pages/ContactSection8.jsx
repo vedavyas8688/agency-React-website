@@ -83,7 +83,7 @@ const ContactSection8 = () => {
 
           {/* card4 image */}
 
-          <article
+          <article 
             className="flex flex-col rounded-3xl bg-gray-100 p-10 
             bg-[url('https://picsum.photos/seed/people/600/600')] 
             bg-cover bg-center min-h-38"

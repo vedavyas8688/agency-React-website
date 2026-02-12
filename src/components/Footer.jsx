@@ -51,6 +51,11 @@ const Footer = ({ theme }) => {
               </NavLink>
             </li>
             <li>
+              <NavLink to="/blogcomponents" className="hover:text-primary">
+                 Blogs
+              </NavLink>
+            </li>
+            <li>
               <NavLink to="/contactuspage" className="hover:text-primary">
                 Contact Us
               </NavLink>
